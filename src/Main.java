@@ -42,10 +42,10 @@
 }*/
 
 
-public class Main {
+/*public class Main {
 
     public static void main(String[] args) {
-        boolean registered = false;
+        boolean registered = true;
         int percent;
 
         if (registered) {
@@ -54,8 +54,31 @@ public class Main {
             percent = 1;
         }
 
-        int amount = 1000_60;
+        int amount = 25_000_60;
 
         int bonus = amount * percent / 100 / 100;
+        int limit = 500;
+
+        if (bonus > limit) {
+            bonus = limit;
+        }
         System.out.println(bonus);
     }
+}*/
+
+/*public class Main {
+
+    public static void main(String[] args) {
+        boolean registered = true;
+        int percent = registered ? 3 : 1;//сокращение if - else
+        long amount = 100060;
+        long bonus = amount * percent / 100 / 100;
+        int limit = 500;
+
+        if (bonus > limit) {
+            bonus = limit;
+        }
+        System.out.println(bonus);
+    }
+}*/
+
